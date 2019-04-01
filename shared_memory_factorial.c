@@ -1,5 +1,5 @@
 /*
-should be compiled with: gcc shared_memory_factorial.c -o 12 -lrt
+should be compiled with: gcc shared_memory_factorial.c -o factorial -lrt
 */
 
 #include <stdio.h>
