@@ -22,10 +22,12 @@ int main()
 
     printf("Enter number of processes, maximum %d: ", N);
     scanf("%d", &n);
+    n %= N + 1;
     printf("\n");
 
     printf("Enter number of resources, maximum %d: ", M);
     scanf("%d", &m);
+    m %= M + 1;
     printf("\n");
 
     printf("Enter allocations, row by row: ");
