@@ -95,6 +95,15 @@ int main()
         }
     }
 
+    for (i = 0; i < n; i++)
+        safe &= finish[i];
+
+    if (!safe)
+    {
+        printf("Unsafe state―put on your seatbealts.\n");
+        return 0;
+    }
+
     printf("Safe sequence:\n");
     for (i = 0; i < n - 1; i++)
         printf("P%d -> ", seq[i]);
